@@ -1,0 +1,16 @@
+package defaultStaticMethod;
+
+/*
+ 4) define interface "Base1" with "default void fun1()".
+	derive an interface "Sub1" from "Base1" with "default void fun2()"
+	derive a class "Sub2" from "Sub1". It should have only "public void fun3()" method.
+*/
+
+public class Assignment4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

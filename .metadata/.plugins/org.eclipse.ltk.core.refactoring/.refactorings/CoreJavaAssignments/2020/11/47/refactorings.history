@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;CoreJavaAssignments/src/ExceptionHandling&apos;&#x0D;&#x0A;- Original project: &apos;CoreJavaAssignments&apos;&#x0D;&#x0A;- Destination element: &apos;CoreJavaAssignments/src/ExceptionHandling&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     PackageandException.MyArithException.java&#x0D;&#x0A;     PackageandException.MyCalcApp.java&#x0D;&#x0A;     PackageandException.Calculator.java" description="Copy compilation units" destination="/src&lt;ExceptionHandling" element1="/src&lt;PackageandException{MyArithException.java" element2="/src&lt;PackageandException{MyCalcApp.java" element3="/src&lt;PackageandException{Calculator.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1605784188332" units="3" version="1.0"/>
+</session>

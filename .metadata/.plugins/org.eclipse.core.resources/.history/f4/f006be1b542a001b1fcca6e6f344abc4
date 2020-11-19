@@ -1,0 +1,23 @@
+package PackageandException;
+
+public class Calculator {
+	int caldouble(int a)
+	{
+		
+		if(a==0)
+		{
+			System.out.println("Zero not allowed");
+		}
+		else if(a<0)
+		{
+			System.out.println("Negative not allowed" );
+		}
+		return a;
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

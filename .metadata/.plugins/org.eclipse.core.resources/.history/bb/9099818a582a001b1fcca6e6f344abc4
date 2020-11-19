@@ -1,0 +1,8 @@
+package Course;
+
+public class PreDac {
+	void cet()
+	{
+		
+	}
+}

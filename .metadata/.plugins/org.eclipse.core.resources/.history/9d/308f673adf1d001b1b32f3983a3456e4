@@ -1,0 +1,19 @@
+// above program  using "implements Runnable" method.
+	class RunThread implements Runnable
+	{
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			
+		}
+	}
+public class Ass2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		RunThread r1= new RunThread();
+		Thread t1=new Thread(c);
+		
+	}
+
+}

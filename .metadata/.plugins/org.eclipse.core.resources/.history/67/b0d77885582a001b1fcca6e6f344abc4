@@ -1,0 +1,12 @@
+package Course;
+
+public class Dac {
+	void term1()
+	{
+		
+	}
+	void term2()
+	{
+		
+	}
+}

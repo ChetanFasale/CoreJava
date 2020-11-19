@@ -1,0 +1,60 @@
+package ExceptionHandling;
+/*
+ * 1)Create abstract base class "Game" with 'play()' as abstract method.
+From that derive following classes.
+Football,Cricket,Tennis
+Create a class called as "Assignment1" (public class)
+inside a main method create an array of "Game" (3 elements)
+Store objects of Football,Cricket and Tennis respectively.
+Now traverse the array and call that Cricket's play() method.
+ */
+abstract class Game
+{
+	abstract void play();
+}
+
+class Football extends Game
+{
+
+	@Override
+	void play() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+class Cricket extends Game
+{
+
+	@Override
+	void play() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+class Tennis extends Game
+{
+
+	@Override
+	void play() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Game g[] = new Game[3];
+		
+		g[0]=new Cricket();
+		g[1]=new Football();
+		g[2]=new Tennis();
+		
+		
+	}
+
+}

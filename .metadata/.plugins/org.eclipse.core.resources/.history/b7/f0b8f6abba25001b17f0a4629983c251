@@ -1,0 +1,75 @@
+package methodReference;
+/*
+7)  define a class "Student" with name and age as member variables, parameterized constructor , setters , getters and "toString" method. 
+	
+	define a functional interface "MyInterface" with an abstract method "void show(Student ref)"
+
+	inside main function 
+	a) create an instance of "Student" class by passing "Vijay" and '20' values.
+
+	b) create method reference for "MyInterface" and display the instance of "Student" class created above.
+
+ */
+
+@FunctionalInterface
+interface MyInterface
+{
+	void disp();
+	default void disp1()
+	{
+		System.out.println("test");
+	}
+}
+
+public class Assignement7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		MyInterface mi = new MyInterface() {
+			
+			@Override
+			public void disp() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			public void test()
+			{
+				System.out.println("test");
+			}
+		};
+		System.out.println("sub class --"+mi.getClass().getName());
+		MyInterface ref=()->{System.out.println("Display method implementation"); };
+		System.out.println("sub class --"+ref.getClass().getName());
+		ref.disp1();
+		
+	}
+
+}
+
+/*class Student
+{
+	String name;
+	int age;
+	Student(String name,int age)
+	{
+		this.name=name;
+		this.age=age;
+	}
+	
+	void getData()
+	{
+		
+	}
+
+	void setData()
+	{
+		
+	}
+	
+	
+}*/
+
+
