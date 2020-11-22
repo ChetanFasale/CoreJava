@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Day14/src/Test.java"/>
+<listEntry value="/Test/src/OOPS_Concepts/test.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Test"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Day14"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="OOPS_Concepts.test"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Test"/>
 </launchConfiguration>

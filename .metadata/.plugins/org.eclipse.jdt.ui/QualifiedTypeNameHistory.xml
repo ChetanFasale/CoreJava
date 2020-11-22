@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="Person"/>
-<fullyQualifiedTypeName name="Student"/>
-<fullyQualifiedTypeName name="Doctor"/>
-<fullyQualifiedTypeName name="lambda.Assignment1.First"/>
-<fullyQualifiedTypeName name="lambda.MyInterface"/>
 <fullyQualifiedTypeName name="lambda.Calculator"/>
 <fullyQualifiedTypeName name="lambda.Display"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
@@ -31,7 +26,6 @@
 <fullyQualifiedTypeName name="defaultStaticMethod.FirstOne"/>
 <fullyQualifiedTypeName name="defaultStaticMethod.SubOne"/>
 <fullyQualifiedTypeName name="collectionApi.Assignment1"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.ListIterator"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="Course.VitaApp"/>
 <fullyQualifiedTypeName name="Course.Basic"/>
 <fullyQualifiedTypeName name="ExceptionHandling.Assignment4"/>
+<fullyQualifiedTypeName name="oopConcepts.Vita"/>
+<fullyQualifiedTypeName name="javax.rmi.CORBA.StubDelegate"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="oopConcepts.Dac"/>
+<fullyQualifiedTypeName name="oopConcepts.Dbda"/>
+<fullyQualifiedTypeName name="OOPS_Concepts.sub"/>
 </qualifiedTypeNameHistroy>
