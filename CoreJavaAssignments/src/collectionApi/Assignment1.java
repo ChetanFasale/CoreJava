@@ -15,12 +15,12 @@ public class Assignment1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		List<String> myList = new ArrayList<>();
-		myList.add("test1");
-		myList.add("test2");
-		myList.add("test3");
-		
-		ListIterator<String> iterator= myList.listIterator();
+		List<Integer> myList = new ArrayList<>();
+		for(int i=1;i<=10;i++)
+		{
+			myList.add(i);
+		}
+		ListIterator<Integer> iterator= myList.listIterator();
 		while(iterator.hasNext())
 		{
 			System.out.println(iterator.next());

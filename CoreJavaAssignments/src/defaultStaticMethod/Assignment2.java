@@ -16,6 +16,8 @@ interface Third
 		System.out.println("in disp2");
 	}
 }
+
+
 class Sub implements Third
 {
 	

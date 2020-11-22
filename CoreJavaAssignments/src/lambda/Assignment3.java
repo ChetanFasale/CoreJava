@@ -4,7 +4,8 @@ package lambda;
 
 define a class Demo with two functions "static void perform" and main.
 
-from main function pass lambda expression, collect it in "perform" method and invoke "fun()" function.
+from main function pass lambda expression, collect it in "perform" method and invoke
+ "fun()" function.
  */
 
 interface MyInterface

@@ -21,7 +21,8 @@ interface Second
 		System.out.println("Second Fun Method");
 	}
 }
-
+//if we have multiple inheritance and we have same methods(overriding) in both
+//the interfaces then we also have to override that method in child class 
 class Child implements First,Second
 {
 
@@ -37,6 +38,7 @@ public class Assignment1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		Child c = new Child();
 		c.fun();
 	}
