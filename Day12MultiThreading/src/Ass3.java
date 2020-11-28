@@ -4,7 +4,7 @@ class RunImpl1 implements Runnable
 {
 	
 	@Override
-	synchronized public void run() {
+	 synchronized public void run() {
 //		synchronized(this)
 //		{
 			for(int i=0;i<=5;i++)

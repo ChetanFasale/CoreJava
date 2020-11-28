@@ -1,3 +1,10 @@
+/*create 2 threads
+	one thread will display 1 to 50
+	second thread will display 50 to 1
+both the threads should start simultaneously.
+
+(use implements method)
+*/
 class Thread1 implements Runnable
 {
 	@SuppressWarnings("static-access")
@@ -6,10 +13,10 @@ class Thread1 implements Runnable
 		//synchronized(this)
 		{
 			Thread t = Thread.currentThread();
-			
+			System.out.println(t);
 			for(int i=1;i<=10;i++)
 			{		
-				System.out.print(i);
+				System.out.println(i);
 			}
 			try {
 				
@@ -38,7 +45,6 @@ class Thread2 implements Runnable
 			}
 			System.out.print(" ");
 			try {
-				
 				t.sleep(10);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

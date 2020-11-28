@@ -4,7 +4,7 @@ class ThreadDemo4 implements Runnable
 	{
 	 public void run()             
 		{
-			synchronized(ThreadDemo4.class)
+			synchronized(this)
 			{	
 				
 			

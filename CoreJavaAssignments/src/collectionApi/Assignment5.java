@@ -1,5 +1,6 @@
 package collectionApi;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -17,7 +18,11 @@ public class Assignment5 {
 		// TODO Auto-generated method stub
 		Map<Integer,String> map= new HashMap<>();
 		map.put(1, "chetan");
+		map.put(1, "value");
+		map.put(1, "value1");
 		map.put(2, "medha");
+		
+		
 		Set<Entry<Integer, String>> set=map.entrySet();
 		Iterator<Entry<Integer,String>> iterator = set.iterator();
 		while(iterator.hasNext())

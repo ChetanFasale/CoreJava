@@ -18,6 +18,7 @@ class Th1 extends Thread
 	}
 }
 public class Ass1 {
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
