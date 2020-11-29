@@ -12,46 +12,29 @@ public class TcpServer
 			InputStream i=ss.getInputStream();
 			ObjectInputStream oisSocket=new ObjectInputStream(i);
 
-			Map<String, Integer> map=(Map)oisSocket.readObject();
-			String k=null;
+			Map<Integer, Integer> map=(Map)oisSocket.readObject();
+			int k=0;
 			int v=0;
 			System.out.println("Object from client is\t"+map);
-		 	for (Map.Entry<String, Integer> entry : map.entrySet()) {
+		 	for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
              k = entry.getKey();
              v = entry.getValue();
         	}
-		 	if(k.matches("[a-zA-Z]+") && k.length() > 2)
+		
+		 	Bank b = new Bank(k,v);
+		 	System.out.println("Object created"+b);
+		 	try (FileOutputStream fos = new FileOutputStream("D://CDAC/JAVA By Nitin Sir/myProject/BankDatabase.txt")) 
 		 	{
-		 		Bank b = new Bank(k,v,1);
-		 		System.out.println("Object created"+b);
-		 		try (FileOutputStream fos = new FileOutputStream("D://CDAC/JAVA By Nitin Sir/myProject/BankDatabase.txt")) 
-		 		{
-					try (ObjectOutputStream oos = new ObjectOutputStream(fos)) 
-					{
-						oos.writeObject(b);
-					}
-				}
-				catch(Exception e)
+				try (ObjectOutputStream oos = new ObjectOutputStream(fos)) 
 				{
-					e.printStackTrace();
+					oos.writeObject(b);
 				}
 			}
-			else
+			catch(Exception e)
 			{
-				try(FileInputStream fis=new FileInputStream("D://CDAC/JAVA By Nitin Sir/myProject/BankDatabase.txt"))
-				{
-					try(ObjectInputStream ois=new ObjectInputStream(fis))
-					{
-					Bank s1=(Bank)ois.readObject();
-					// Deserialization
-						System.out.println("else"+s1);
-					}
-				}
-				catch(Exception ee)
-				{
-					ee.printStackTrace();
-				}	
+					e.printStackTrace();
 			}
+			
 
 			ss.close();
 		}

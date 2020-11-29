@@ -9,15 +9,15 @@ public class TcpClient
 		{
 			Socket ss=new Socket("DESKTOP-DKKGSR2",10000);
 			OutputStream o=ss.getOutputStream();
-				Map<String, Integer> map= new HashMap<>();
+				Map<Integer, Integer> map= new HashMap<>();
 			ObjectOutputStream oos=new ObjectOutputStream(o);
 			Scanner sc=new Scanner(System.in);
 			System.out.println("Welcome to Sbi Bank\n1)Existing User \n2)New User");
 			int user=sc.nextInt();
 			if(user==1)
 			{
-				System.out.println("Enter Account name");
-				String actId=sc.next();
+				System.out.println("Enter Account Id :");
+				int actId=sc.nextInt();
 				System.out.println("1) Deposit \n2) Withdraw \n3) Check Balance\nEnter your choice :");
 				int ch=sc.nextInt();
 				map.put(actId,ch);
@@ -41,9 +41,11 @@ public class TcpClient
 
 				System.out.println("Enter the full name :");
 				String name=sc.next();
-				System.out.println("Enter the opening balance :");
-				int balance=sc.nextInt();
-				map.put(name,balance);
+				Random rand = new Random(); 
+        		int rand_int1 = rand.nextInt(1000); 
+				// System.out.println("Enter the opening balance :");
+				// int balance=sc.nextInt();
+				map.put(rand_int1,1);
 				oos.writeObject(map);
 				
 			}
